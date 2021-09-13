@@ -90,7 +90,7 @@ elif age < 30:
     print('вы ввели число =', age, 'которое меньше 30')
 elif age == 30:
     print('вы ввели число =', age, 'которое равно 30')
-# todo задание 8 и 9
+# todo задание 8
 rand = random.randint(1, 100)
 apr = int(input('введите число: '))
 if apr > rand:
@@ -99,3 +99,28 @@ elif apr < rand:
     print('вы ввели число =', apr, 'которое меньше сгенерированного числа ', rand)
 else:
     print('вы ввели число =', apr, 'которое равно сгенерированному числу ', rand)
+# todo задание 9
+rand_2 = random.randint(1, 100)
+rand_3 = random.randint(1, 100)
+apr_2 = int(input('введите число: '))
+if apr_2 < rand_2:
+    if apr_2 < rand_3:
+        print('вы ввели число ', (apr_2), 'которое меньше', (rand_2), 'и меньше', (rand_3))
+    elif apr_2 == rand_3:
+        print('вы ввели число ', (apr_2), 'которое меньше', (rand_2), 'и равно', (rand_3))
+    else:
+        print('вы ввели число ', (apr_2), 'которое меньше', (rand_2), 'и больше', (rand_3))
+elif apr_2 == rand_2:
+    if apr_2 < rand_3:
+        print('вы ввели число ', (apr_2), 'которое равно', (rand_2), 'и меньше', (rand_3))
+    elif apr_2 == rand_3:
+        print('вы ввели число ', (apr_2), 'которое равно', (rand_2), 'и равно', (rand_3))
+    else:
+        print('вы ввели число ', (apr_2), 'которое равно', (rand_2), 'и больше', (rand_3))
+else:
+    if apr_2 < rand_3:
+        print('вы ввели число ', (apr_2), 'которое больше', (rand_2), 'и меньше', (rand_3))
+    elif apr_2 == rand_3:
+        print('вы ввели число ', (apr_2), 'которое больше', (rand_2), 'и равно', (rand_3))
+    else:
+        print('вы ввели число ', (apr_2), 'которое больше', (rand_2), 'и больше', (rand_3))
